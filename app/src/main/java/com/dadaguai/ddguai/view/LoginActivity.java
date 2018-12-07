@@ -96,6 +96,7 @@ public class LoginActivity extends BaseLayoutActivity {
                         EMClient.getInstance().groupManager().loadAllGroups();
                         EMClient.getInstance().chatManager().loadAllConversations();
                         jumpTo(HomeActivity.class);
+                        finish();
                     }
 
                     @Override

@@ -78,6 +78,7 @@ public class FlashActivity extends BaseLayoutActivity {
                 flash.edit().putString("gender", "man").commit();
                 API.GENDER = "man";
                 jumpTo(LoginActivity.class);
+                finish();
             }
         });
 
@@ -87,6 +88,7 @@ public class FlashActivity extends BaseLayoutActivity {
                 flash.edit().putString("gender", "woman").commit();
                 API.GENDER = "woman";
                 jumpTo(LoginActivity.class);
+                finish();
             }
         });
         final AlertDialog dlg = builder.create();

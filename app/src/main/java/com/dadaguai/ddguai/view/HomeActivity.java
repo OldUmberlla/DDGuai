@@ -62,9 +62,11 @@ public class HomeActivity extends BaseLayoutActivity {
     @Override
     protected void initModelData() {
         if (API.GENDER.equals("man")) {
-            userId = "20181207gss";
-        } else if (API.GENDER.equals("woman")) {
             userId = "20181207czx";
+            homeTalkName.setText("小胖子");
+        } else if (API.GENDER.equals("woman")) {
+            userId = "20181207gss";
+            homeTalkName.setText("全宇宙最帅的森哥");
         }
         //通过注册消息监听来接收消息。
         EMClient.getInstance().chatManager().addMessageListener(msgListener);
@@ -92,7 +94,7 @@ public class HomeActivity extends BaseLayoutActivity {
             EMClient.getInstance().chatManager().sendMessage(emMessage);
             //添加消息到历史记录列表中
             setMyMessage(2, message);
-            homeTalkMsglist.scrollToPosition(messageAdapter.getItemCount()-1);
+            homeTalkMsglist.scrollToPosition(messageAdapter.getItemCount() - 1);
             homeTalkMessage.setText("");
         } else {
             toast("信息不能为空哦！");
@@ -132,10 +134,18 @@ public class HomeActivity extends BaseLayoutActivity {
     EMMessageListener msgListener = new EMMessageListener() {
 
         @Override
-        public void onMessageReceived(List<EMMessage> messages) {
+        public void onMessageReceived(final List<EMMessage> messages) {
             //收到消息
-            setMyMessage(1, messages.get(0).getBody().toString());
-            Log.e(TAG, "收到消息: " + messages.toString());
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    String s = messages.get(0).getBody().toString();
+                    String substring = s.substring(5, s.length() - 1);
+                    setMyMessage(1, substring);
+                    Log.e(TAG, "收到消息: " + messages.toString());
+                }
+            });
+
         }
 
         @Override
