@@ -18,7 +18,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class FlashActivity extends AppCompatActivity {
+public class FlashActivity extends BaseLayoutActivity {
 
     @BindView(R.id.btn_register)
     Button btnRegister;
@@ -27,35 +27,34 @@ public class FlashActivity extends AppCompatActivity {
     private String name = "user_test";
     private String password = "test/123";
 
-//    @Override
-//    protected int getLayoutId() {
-//        return R.layout.activity_flash;
-//    }
-//
-//    @Override
-//    protected void findViews() {
-//    }
-//
-//    @Override
-//    protected void formatViews() {
-//
-//    }
-//
-//    @Override
-//    protected void initModelData() {
-//
-//    }
-//
-//    @Override
-//    protected void getBundle(Bundle bundle) {
-//
-//    }
+    @Override
+    protected int getLayoutId() {
+        return R.layout.activity_flash;
+    }
+
+    @Override
+    protected void findViews() {
+    }
+
+    @Override
+    protected void formatViews() {
+
+    }
+
+    @Override
+    protected void initModelData() {
+
+    }
+
+    @Override
+    protected void getBundle(Bundle bundle) {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // TODO: add setContentView(...) invocation
-        setContentView(R.layout.activity_flash);
         ButterKnife.bind(this);
     }
 
