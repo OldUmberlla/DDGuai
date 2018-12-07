@@ -2,7 +2,6 @@ package com.dadaguai.ddguai.app;
 
 import android.app.ActivityManager;
 import android.app.Application;
-import android.content.Context;
 import android.content.pm.PackageManager;
 import android.util.Log;
 
@@ -51,6 +50,8 @@ public class DDGApp extends Application {
         EMClient.getInstance().init(this, options);
         //在做打包混淆时，关闭debug模式，避免消耗不必要的资源  true：开启
         EMClient.getInstance().setDebugMode(true);
+        //注册一个监听连接状态的listener
+//        EMClient.getInstance().addConnectionListener(new MyConnectionListener(this));
     }
 
     private String getAppName(int pID) {
@@ -69,7 +70,7 @@ public class DDGApp extends Application {
                     return processName;
                 }
             } catch (Exception e) {
-                 Log.d("Process", "Error>> :"+ e.toString());
+                Log.d("Process", "Error>> :" + e.toString());
             }
         }
         return processName;

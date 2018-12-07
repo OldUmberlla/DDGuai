@@ -54,10 +54,9 @@
         android:roundIcon="@drawable/dadaguai_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.No.ActionBar"
-        android:windowSoftInputMode="stateHidden|stateUnchanged|stateVisible|adjustResize">
+        android:windowSoftInputMode="stateVisible|adjustResize">
         <activity
             android:name=".view.FlashActivity"
-            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoBar">
 
             <intent-filter>
@@ -67,6 +66,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.LoginActivity" />
+        <activity android:name=".view.HomeActivity" />
 
         <!-- - - - - - - - - - - - - - -即时通讯 环信 配置 - - - - - - - - - - - - - - - - - - -->
         <!-- 设置环信应用的AppKey -->

@@ -3,8 +3,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="720px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_user_icon"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_gravity="center"
+            android:layout_margin="8px"
+            android:background="@mipmap/woman_black" />
+
+        <EditText
+            android:id="@+id/login_edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="960px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_gravity="center"
+            android:layout_margin="8px"
+            android:background="@mipmap/password" />
+
+        <EditText
+            android:id="@+id/login_edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:password="true"
+            android:text="" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="340px"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="360px"
+        android:background="@color/white"
+        android:text="登陆"
+        android:textColor="@color/black" />
+
     <TextView
+        android:id="@+id/login_tv_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="360px"
+        android:layout_marginLeft="100px"
+        android:layout_toRightOf="@+id/login_btn_login"
+        android:text="想注册"
+        android:textColor="@color/blue" />
+
 </RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="384px"
+        android:layout_margin="2px"
+        android:background="@drawable/bolder_style">
+
+        <ImageView
+            android:id="@+id/home_talk_back"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_marginLeft="15px"
+            android:layout_marginTop="15px"
+            android:background="@mipmap/back" />
+
+        <ImageView
+            android:id="@+id/home_talk_pengyouquan"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15px"
+            android:layout_marginTop="15px"
+            android:background="@mipmap/pengyouquan" />
+
+        <ImageView
+            android:id="@+id/home_talk_headlogo"
+            android:layout_width="128px"
+            android:layout_height="128px"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/head_logo" />
+
+        <TextView
+            android:id="@+id/home_talk_name"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40px"
+            android:text="我是名字" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home_talk_msglist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="153px"
+        android:layout_marginTop="387px" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="2px"
+        android:background="@drawable/bolder_style"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_talk_emoji"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:layout_marginRight="25px"
+            android:background="@mipmap/emoji" />
+
+        <EditText
+            android:id="@+id/home_talk_message"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="3px"
+            android:layout_weight="1"
+            android:background="@drawable/bolder_style" />
+
+        <ImageView
+            android:id="@+id/home_talk_send"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25px"
+            android:layout_marginRight="15px"
+            android:background="@mipmap/send" />
+    </LinearLayout>
+
+</RelativeLayout>

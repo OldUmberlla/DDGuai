@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="500px"
+        android:layout_height="300px"
+        android:layout_margin="50px"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bolder_style">
+
+        <TextView
+            android:layout_width="500px"
+            android:layout_height="100px"
+            android:gravity="center"
+            android:text="你是男还是女"
+            android:textSize="30px" />
+
+        <ImageView
+            android:id="@+id/flash_woman"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="180px"
+            android:background="@mipmap/woman_pink" />
+
+        <ImageView
+            android:id="@+id/flash_man"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100px"
+            android:layout_marginTop="180px"
+            android:background="@mipmap/man_blue" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

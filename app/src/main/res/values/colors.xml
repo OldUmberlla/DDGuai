@@ -3,5 +3,47 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#CC99FF</color>
+    <color name="blue">#1976d2</color>
+    <color name="orange_1">#FF9800</color>
+    <color name="transparent">#00000000</color>
     <color name="black_p50">#7f000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_1">#F2F5F7</color>
+    <color name="black">#000000</color>
+    <color name="black_1">#393E46</color>
+    <color name="gray_1">#EEEEEE</color>
+    <color name="btn_back">#DEE9EF</color>
+    <color name="divider">#999</color>
+    <color name="btn_unable">#05AE8D</color>
+    <color name="btn_press">#1DCEAB</color>
+    <color name="title">#cedada</color>
+    <color name="all_background">#EDEDE7</color>
+    <color name="text_color">#355c7d</color>
+    <color name="yellow">#F4D26F</color>
+    <color name="addsubutils_text">#999</color>
+    <color name="line_color">#f7f7f7</color>
+    <color name="item_color">#984a59</color>
+    <color name="orange">#f75940</color>
+    <color name="dark_blue">#364857</color>
+    <color name="dark_blue2">#334252</color>
+    <color name="blue_green">#3dc7be</color>
+
+    <color name="background_2">#e7eff3</color>
+    <color name="background_3">#112d4e</color>
+    <color name="background_4">#dbe2ef</color>
+    <color name="btn_text_color">#355c7d</color>
+
+    <color name="menu_item_normal_bg">#FFFFFFFF</color>
+    <color name="menu_item_press_bg">#d6d2d3</color>
+    <color name="menu_item_divider_color">#d6d2d3</color>
+    <color name="menu_item_text_color">#FFFF4081</color>
+    <color name="blue_bg">#1296DB</color>
+    <color name="blue_bg_white">#B3E5FC</color>
+    <color name="process_blue_bg">#297EB7</color>
+    <color name="setting_bg">#f1f1f1</color>
+    <color name="setting_text">#2d3e50</color>
+    <color name="setting_text2">#7e7e7e</color>
+    <color name="setting_linecolor">#c1c1c1</color>
+    <color name="setting_title_bg">#2d3e50</color>
 </resources>
