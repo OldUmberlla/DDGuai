@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -47,44 +48,134 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/home_talk_msglist"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="153px"
-        android:layout_marginTop="387px" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 
 
     <LinearLayout
+        android:id="@+id/home_talk_linearlayout"
         android:layout_width="match_parent"
-        android:layout_height="150px"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="2px"
         android:background="@drawable/bolder_style"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/home_talk_emoji"
-            android:layout_width="64px"
-            android:layout_height="64px"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="15px"
-            android:layout_marginRight="25px"
-            android:background="@mipmap/emoji" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:background="@drawable/bolder_style"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/home_talk_message"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_margin="3px"
-            android:layout_weight="1"
-            android:background="@drawable/bolder_style" />
+            <ImageView
+                android:id="@+id/home_talk_voice"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="15px"
+                android:background="@mipmap/voice" />
 
-        <ImageView
-            android:id="@+id/home_talk_send"
-            android:layout_width="64px"
-            android:layout_height="64px"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="25px"
-            android:layout_marginRight="15px"
-            android:background="@mipmap/send" />
+            <EditText
+                android:id="@+id/home_talk_message"
+                android:layout_width="wrap_content"
+                android:layout_height="147px"
+                android:layout_margin="3px"
+                android:layout_weight="1"
+                android:background="@drawable/bolder_style" />
+
+            <TextView
+                android:id="@+id/home_talk_take_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="147px"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:background="@drawable/bolder_style"
+                android:gravity="center"
+                android:text="按住说话"
+                android:textSize="30px"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/home_talk_emoji"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15px"
+                android:layout_marginRight="25px"
+                android:background="@mipmap/emoji" />
+
+            <ImageView
+                android:id="@+id/home_talk_add"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="15px"
+                android:background="@mipmap/add" />
+
+            <ImageView
+                android:id="@+id/home_talk_send"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25px"
+                android:layout_marginRight="15px"
+                android:background="@mipmap/send" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_talk_bottom_linear"
+            android:layout_width="match_parent"
+            android:layout_height="230px"
+            android:layout_margin="2px"
+            android:background="@drawable/bolder_style"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/home_talk_send_img"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="73px"
+                android:background="@mipmap/send_img" />
+
+            <ImageView
+                android:id="@+id/home_talk_send_photo"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="73px"
+                android:background="@mipmap/send_photo" />
+
+            <ImageView
+                android:id="@+id/home_talk_send_video"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="73px"
+                android:background="@mipmap/send_video" />
+
+            <ImageView
+                android:id="@+id/home_talk_send_video_call"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="73px"
+                android:background="@mipmap/send_video_call" />
+
+            <ImageView
+                android:id="@+id/home_talk_send_call"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_gravity="center"
+                android:layout_marginLeft="73px"
+                android:background="@mipmap/send_call" />
+
+        </LinearLayout>
+
     </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>
