@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':ddg_login', ':ddg_base', ':ddg_home'
